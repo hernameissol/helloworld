@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* https://www.sitepoint.com/moonlighting-css-text-shadow/ */
+        .shadow1 {
+            color: yellow;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7),
+                5px 5px 1px orange,
+                6px 6px 2px rgba(0, 0, 0, 0.7),
+                10px 10px 1px red,
+                11px 11px 2px rgba(0, 0, 0, 0.7),
+                15px 15px 1px purple,
+                16px 16px 2px rgba(0, 0, 0, 0.7);
+            -webkit-animation: text-snake 1s infinite alternate;
+            -moz-animation: text-snake 1s infinite alternate;
+            -ms-animation: text-snake 1s infinite alternate;
+            animation: text-snake 1s infinite alternate;
+        }
+
+        /* other prefixed animation blocks ommitted for brevity */
+
+        @keyframes text-snake {
+            from {
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7),
+                    5px 5px 1px orange,
+                    6px 6px 2px rgba(0, 0, 0, 0.7),
+                    10px 10px 1px red,
+                    11px 11px 2px rgba(0, 0, 0, 0.7),
+                    15px 15px 1px purple,
+                    16px 16px 2px rgba(0, 0, 0, 0.7);
+            }
+
+            to {
+                text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.7),
+                    -5px 5px 1px orange,
+                    -6px 6px 2px rgba(0, 0, 0, 0.7),
+                    -10px 10px 1px red,
+                    -11px 11px 2px rgba(0, 0, 0, 0.7),
+                    -15px 15px 1px purple,
+                    -16px 16px 2px rgba(0, 0, 0, 0.7);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <br /> <br />
+    <h1 class="shadow1" style="margin-left:100px;">HELLO WORLD</h1>
+</body>
+
+</html>

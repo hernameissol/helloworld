@@ -3,44 +3,63 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Web font example</title>
-    <link href="web-font-start.css" rel="stylesheet" type="text/css">
-    <!-- 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <title>CSS Grid - line-based placement starting point</title>
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 20px;
+        }
+
+        header,
+        footer {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207, 232, 220);
+            border: 2px solid rgb(79, 185, 227);
+        }
+
+        aside {
+            border-right: 1px solid #999;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hipster ipsum is the best</h1>
 
-    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl
-        typewriter. Tacos PBR&amp;B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
-        single-origin coffee cold-pressed. PBR&amp;B tattooed trust fund twee, leggings salvia iPhone photo booth health
-        goth gastropub hammock.</p>
+    <div class="container">
+        <header>This is my lovely blog</header>
+        <article>
+            <h1>My article</h1>
+            <p>Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies
+                tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
+                vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae
+                convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin
+                eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo
+                et a urna. Ut id ornare felis, eget fermentum sapien.</p>
 
-    <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit.
-        Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid
-        chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+            <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est,
+                posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam
+                lorem. Vivamus tristique elit dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed
+                lobortis finibus. Vivamus eu urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt eget
+                purus in interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+        </article>
+        <aside>
+            <h2>Other things</h2>
+            <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est,
+                posuere sit amet dapibus ut, facilisis sed est.</p>
+        </aside>
+        <footer>Contact me@mysite.com</footer>
+    </div>
 
-    <h2>It is the quaintest</h2>
-
-    <p>Bespoke green juice aesthetic leggings DIY williamsburg selvage. Bespoke health goth tote bag, fingerstache venmo
-        ennui thundercats butcher trust fund cardigan hella. Wolf vinyl you probably haven't heard of them taxidermy,
-        ugh quinoa neutra meditation asymmetrical mixtape church-key kitsch man bun occupy. Knausgaard butcher raw denim
-        ramps, offal seitan williamsburg venmo gastropub mlkshk cardigan chillwave chartreuse single-origin coffee twee.
-        Ethical asymmetrical banjo typewriter fap. Polaroid waistcoat tousled selfies four dollar toast locavore
-        thundercats. Truffaut post-ironic skateboard trust fund.</p>
-
-    <h2>No, really...</h2>
-
-    <p>Trust fund celiac farm-to-table PBR&amp;B. Brunch art party mumblecore, fingerstache cred echo park literally
-        stumptown humblebrag chambray. Mlkshk vinyl distillery humblebrag crucifix. Mustache craft beer put a bird on
-        it, irony deep v poutine ramps williamsburg heirloom brooklyn.</p>
-
-    <p>Taxidermy tofu YOLO, sustainable etsy flexitarian art party stumptown portland. Ethical williamsburg retro paleo.
-        Put a bird on it leggings yuccie actually, skateboard jean shorts paleo lomo salvia plaid you probably haven't
-        heard of them.</p>
 </body>
 
 </html>

@@ -1,0 +1,10 @@
+<span id="my_span" onclick="change();">안녕하세요.</span>
+
+<script>
+    function change() {
+        alert(document.getElementById("my_span").innerHTML);
+
+        document.getElementById("my_span").style.backgroundColor = "red";
+        document.getElementById("my_span").innerHTML = "반갑습니다.";
+    }
+</script>

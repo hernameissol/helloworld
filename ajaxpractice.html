@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <title>동적 폼 전송 1번 실습 문제 해답</title>
+
+    <script>
+        function right_copy() {
+            document.getElementById("right").value = document.getElementById("left").value;
+        }
+
+        function left_copy() {
+            document.getElementById("left").value = document.getElementById("right").value;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="left"> <button onclick="javascript:right_copy();">오른쪽으로 복사</button>
+
+    <input type="text" id="right"> <button onclick="javascript:left_copy();">왼쪽으로 복사</button>
+</body>
+
+</html>
